@@ -1,0 +1,32 @@
+#include<stdio.h>
+#include "yp.h"
+
+void main()
+{
+	char s[300],f[300],m[300];
+	
+	printf("Enter student name : ");
+	gets(s);
+	printf("Enter student's father name : ");
+	gets(f);
+	printf("Enter student's mother name : ");
+	gets(m);
+	
+	printf("\nStudent details are as follows : ");
+	printf("\n------------------------------\n");
+	
+	printf("\nStudent name           : ");
+	propercase(s);
+	printf("\nStudent's fathers name : ");
+	propercase(f);
+	printf("\nStudent's mothers name : ");
+	propercase(m);
+	
+	printf("\nWORDCOUNT of each name :");
+	printf("\n----------------------\n");
+	
+	printf("\nTotal number os words in student's name         :  %d",wordcount(s));
+	printf("\nTotal number os words in student's father name  :  %d",wordcount(f));
+	printf("\nTotal number os words in student's mother name  :  %d",wordcount(m));
+	
+}
